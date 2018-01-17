@@ -1,10 +1,10 @@
 import React from 'react';
-
+import { sum } from '../../helper'
 class About extends React.Component {
   render() {
     return(
      
-    <p>About</p>
+    <p>{sum()}About</p>
     
     )
   }
