@@ -8,7 +8,7 @@ class App extends React.Component {
   render() {
     return(
     	<div className = 'popxo-container'>
-	 		<Header />
+	 		<Header age='5000' />
 	 		<About />
 	 		<Footer />	
  		</div>
