@@ -1,3 +1,4 @@
 export function sum  ()  {
-	return '4'
+	let test = "Hey! I'm Helper";
+	return test
 }
