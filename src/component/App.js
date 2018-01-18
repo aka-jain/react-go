@@ -4,7 +4,7 @@ import Footer from './footer/Footer';
 import About from './about/About';
 import Home from './home/Home';
 import NotFound from './error/NotFound';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 class App extends React.Component {
   render() {
