@@ -1,9 +1,28 @@
 import React from 'react';
 
-const Home = (props) => {
+class Home extends React.Component {
+
+	constructor(props) {
+	  super(props);
+		
+	}
+
+	createStory(event){
+		event.preventDefault();
+		const story = {
+			title: this.title.value
+		}
+		 this.props.addStory(story);
+	}
+
+  render() {
 	return(
- 		<p>Home</p>
+			<form onSubmit={(e) => this.createStory(e)}>
+				<input ref={(input) => this.title = input} type="text" name="title" placholder="Enter Title" />
+				<button type-="submit"></button>
+			</form>
  		)
+	}
 }
 
 export default Home;
