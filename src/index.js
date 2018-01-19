@@ -1,10 +1,11 @@
 import React from 'react';
 import { render } from 'react-dom';
-import App from './component/App';
-import Home from './component/home/Home';
-import About from './component/about/About';
-import NotFound from './component/error/NotFound';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import App from './Components/App';
+import Home from './Components/Home/Home';
+import About from './Components/About/About';
+import NotFound from './Components/Core/Error/NotFound';
 
 import './index.scss'
 
