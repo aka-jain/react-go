@@ -1,10 +1,11 @@
 import React from 'react';
-import Header from './header/Header';
-import Footer from './footer/Footer';
-import About from './about/About';
-import Home from './home/Home';
-import NotFound from './error/NotFound';
 import { Route, Switch } from 'react-router-dom';
+
+import Header from './Core/Header/Header';
+import Footer from './Core/Footer/Footer';
+import About from './About/About';
+import Home from './Home/Home';
+import NotFound from './Core/Error/NotFound';
 
 class App extends React.Component {
   render() {
@@ -16,7 +17,7 @@ class App extends React.Component {
 					<Route path="/about" component={About} />
 					<Route component={NotFound} />
 					</Switch>
-	 			<Footer />	
+	 			<Footer />
  		</div>
  		)
   }
