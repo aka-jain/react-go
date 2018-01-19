@@ -13,6 +13,7 @@ const Root = () => {
 	return (
 		<Router>
 			<Switch>
+				<Route path="/about" exact component={About} />
 				<Route path="/" component={App} />
 				<Route component={NotFound} />
 			</Switch>
@@ -20,4 +21,4 @@ const Root = () => {
 	)
 }
 
-render(<Root/>, document.getElementById('root'))
+render(<Root/>, document.getElementById('react-root'))
