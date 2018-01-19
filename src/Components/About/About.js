@@ -1,20 +1,24 @@
 import React from 'react';
 
-import { sum } from '../../Services/helper'
+import { getPageHTMLViaAjax } from '../../Services/helper'
 class About extends React.Component {
+    constructor() {
+        super();
+        this.state = {html: ''};
+    }
 
-	sayHello(){
-		alert("Hey! It's an event");
-	}
+    componentDidMount() {
+        getPageHTMLViaAjax('http://cs.de/about')
+            .then((response) => {
+                const newState = this.state;
+                newState.html = response.data;
+                this.setState({ html: newState.html });
+            });
+    }
 
   render() {
     return(
-    	<div>
-    <p>
-    	{sum()}
-    	About
-    </p>
-    <button onClick={this.sayHello}></button>
+    <div dangerouslySetInnerHTML={{__html:this.state.html}}>
     </div>
 
     )
