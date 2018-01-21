@@ -16,7 +16,7 @@ class App extends React.Component {
 	  this.state = {
 	  	stories: {}
 	  };
-
+	  console.log('cehck')
 	}
 
 	addStory(story){
@@ -37,9 +37,9 @@ class App extends React.Component {
     	<div className = 'popxo-container'>
 	 			<Header age='5000' />
 	 			<Switch>
-		 			<Route exact path="/" component={() => <Home addStory={this.addStory} />}/>
+		 			{/*<Route exact path="/" component={() => <Home addStory={this.addStory} />}/>*/}
 					<Route path="/about" component={About} />
-					<Route component={NotFound} />
+					{/*<Route component={NotFound} />*/}
 					</Switch>
 	 			<Footer />
  		</div>

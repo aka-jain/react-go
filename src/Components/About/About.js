@@ -8,7 +8,7 @@ class About extends React.Component {
     }
 
     componentDidMount() {
-        getPageHTMLViaAjax('http://cs.de/about')
+        getPageHTMLViaAjax('https://staging.chubbystick.in/about')
             .then((response) => {
                 const newState = this.state;
                 newState.html = response.data;
