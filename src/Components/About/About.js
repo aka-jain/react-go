@@ -5,7 +5,7 @@ import { getPageHTMLViaAjax } from '../../Services/helper'
 class About extends React.Component {
     constructor() {
         super();
-   
+
     }
 
     componentDidMount() {
@@ -20,13 +20,10 @@ class About extends React.Component {
   render() {
     return(
         <div>
-        <div>{store.story}</div>
-        <pre> 
-    
-
-        </pre>
-
-    </div>
+            <pre>
+                <div>{JSON.stringify(this.props.story)}</div>
+            </pre>
+        </div>
 
     )
   }

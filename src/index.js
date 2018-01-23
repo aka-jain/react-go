@@ -15,7 +15,7 @@ const Root = () => {
 	return (
 		<Provider store={store}>
 			<Router history={history}>
-					<Route path="/" component={App} />
+				<Route path="/" component={App} />
 			</Router>
 		</Provider>
 	)

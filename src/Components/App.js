@@ -1,4 +1,5 @@
 import Main from './Main';
+import About from './About/About';
 import { bindActionCreators } from 'redux';
 import {connect} from 'react-redux';
 import * as actionCreators from '../Actions/actionCreator';
@@ -14,5 +15,6 @@ let mapDispatchToProps = (dispatch) => {
 }
 
  const App = connect(mapStateToProps, mapDispatchToProps)(Main);
+ export const AboutContainer = connect(mapStateToProps, mapDispatchToProps)(About);
 
 export default App;
