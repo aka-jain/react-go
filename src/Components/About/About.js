@@ -4,7 +4,10 @@ import store from '../../Store/store'
 class About extends React.Component {
     constructor() {
         super();
+    }
 
+    componentWillMount() {
+        this.props.loadHTML();
     }
 
     render() {
