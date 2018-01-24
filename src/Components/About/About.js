@@ -11,19 +11,11 @@ class About extends React.Component {
     }
 
     render() {
-        if(this.props.loadedHTML.length !== 0) {
-            return (
-                <div dangerouslySetInnerHTML={{__html:this.props.loadedHTML.loadedHTML}}>
+        return (
+            <div dangerouslySetInnerHTML={{__html:this.props.loadedHTML.loadedHTML}}>
 
-                </div>
-            );
-        } else {
-            return (
-                <div>
-                    <button onClick={this.props.loadHTML}>Load HTML</button>
-                </div>
-            );
-        }
+            </div>
+        );
     }
 }
 
