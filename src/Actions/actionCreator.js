@@ -23,7 +23,7 @@ const loadHTMLAction = (response) => {
  */
 export const loadHTML = () => {
 	return (dispatch) => {
-		axios.get('https://staging.chubbystick.in')
+		axios.get('https://staging.chubbystick.in/about')
 			.then((response) => {
 					dispatch(loadHTMLAction(response));
 			});
