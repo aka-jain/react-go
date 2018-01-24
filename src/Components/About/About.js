@@ -23,6 +23,8 @@ class About extends React.Component {
             <pre>
                 <div>{JSON.stringify(this.props.story)}</div>
             </pre>
+            <button onClick={this.props.loadHTML}>Load HTML</button>
+            {JSON.stringify(this.props.loadedHTML)}
         </div>
 
     )

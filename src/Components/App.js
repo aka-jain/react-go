@@ -6,7 +6,8 @@ import * as actionCreators from '../Actions/actionCreator';
 
 let mapStateToProps = (state) => {
 	return{
-		story: state.story
+		story: state.story,
+		loadedHTML: state.loadedHTML
 	}
 }
 
