@@ -1,5 +1,3 @@
-import axios from 'axios';
-
 /* This reducer listens for the LOAD_HTML
  * event. It returns the new state with the response
  * from the ajax request.
