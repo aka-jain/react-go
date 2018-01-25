@@ -2,7 +2,6 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Header from './Core/Header/Header';
 import Footer from './Core/Footer/Footer';
-import {AboutContainer} from './App';
 import Home from './Home/Home';
 import NotFound from './Core/Error/NotFound';
 
@@ -29,7 +28,6 @@ class Main extends React.Component {
  			<Header age='5000' />
  			<Switch>
 	 			<Route exact path="/" component={() => <Home {...this.props} />}/>
-				<Route path="/about" component={AboutContainer} />
 				<Route component={NotFound} />
 
 			</Switch>
